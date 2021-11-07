@@ -1,8 +1,16 @@
+/*
+ * @Author: your name
+ * @Date: 2021-11-07 16:52:13
+ * @LastEditTime: 2021-11-07 17:36:58
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: /public_actions/sendMail.js
+ */
 const nodemailer = require('nodemailer');
 
 const sendMail = async (data) => {
   let transporter = nodemailer.createTransport({
-    host: 'smtp.qq.com',
+    host: 'smtp.163.com',
     port: '465',
     secureConnection: true,
     auth: {
